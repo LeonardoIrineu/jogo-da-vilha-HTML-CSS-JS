@@ -10,10 +10,64 @@ h1 {
 .square {
     width: 100px;
     height: 100px;
-    background-color: blueviolet;
+    background-color: rgb(135, 42, 223);
     border: 2px solid rgb(22, 21, 21);
     display: inline-block;
+    /* animação */
+
+    background: linear-gradient(246deg, #d693c0, #7a1078, #872adf);
+        background-size: 600% 600%;
+    
+        -webkit-animation: animaJG 7s ease infinite;
+        -moz-animation: animaJG 7s ease infinite;
+        animation: animaJG 7s ease infinite;
 }
+
+/* animação */
+
+@-webkit-keyframes animaJG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes animaJG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes animaJG {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* fim da animação */
 
 .o{
     position: relative;
@@ -46,13 +100,13 @@ h1 {
 }
 
 button{
-    background-color: blueviolet;
+    background-color: #872adf;
     color: #FFF;
     padding: 10px 30px;
     border-radius: 20px;
     margin-top: 10px;
     font-weight: bold;
-    border: 1px solid blueviolet;
+    border: 1px solid b#872adf;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.5s ease;
@@ -60,6 +114,6 @@ button{
 
 button:hover{
     background-color: transparent;
-    border: 1px solid blueviolet;
-    color: blueviolet;
+    border: 1px solid #872adf;
+    color: #872adf;
 }
